@@ -66,7 +66,7 @@ extension thirdPageViewController: UITableViewDelegate,UITableViewDataSource{
         if indexPath.section == 0 {
             if indexPath.row == 0{
                 let img = UIImageView(frame: CGRectMake(10,10,100,100))
-                img.image = UIImage(named: "title")
+                img.image = UIImage(named: "title1")
                 tableViewCell?.addSubview(img)
                 
                 let name = UILabel(frame: CGRectMake(130,20,100,30))

@@ -14,6 +14,7 @@ class fourthPageViewController: UIViewController {
         super.viewDidLoad()
         self.title = "我"
         self.view.backgroundColor = theme.WZLBackgroundColor
+        print("hah")
         // Do any additional setup after loading the view.
     }
 
