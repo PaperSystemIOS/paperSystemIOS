@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95559FC41D5AFBDF001BE226 /* sixTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95559FC31D5AFBDF001BE226 /* sixTestViewController.swift */; };
+		95559FC61D5AFECC001BE226 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95559FC51D5AFECC001BE226 /* LoginViewController.swift */; };
+		95559FCC1D5B1BC6001BE226 /* ProgressHUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95559FCB1D5B1BC6001BE226 /* ProgressHUDManager.swift */; };
 		9569A3B71D486CC3002AD65A /* leadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569A3AA1D486CC3002AD65A /* leadViewController.swift */; };
 		9569A3B81D486CC3002AD65A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569A3AB1D486CC3002AD65A /* MainNavigationController.swift */; };
 		9569A3B91D486CC3002AD65A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569A3AC1D486CC3002AD65A /* MainTabBarController.swift */; };
@@ -27,11 +30,15 @@
 		95EAE0141D4B2000000033B5 /* LocationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EAE0131D4B2000000033B5 /* LocationTool.swift */; };
 		95EAE0171D4B430C000033B5 /* turn1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EAE0161D4B430C000033B5 /* turn1.swift */; };
 		95EAE0191D4B434B000033B5 /* turn2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EAE0181D4B434B000033B5 /* turn2ViewController.swift */; };
+		95FF263D1D5DA4330084E6EB /* menuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF263C1D5DA4330084E6EB /* menuCollectionCell.swift */; };
 		FFB3C0A6A85D0CAF068A72B8 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4140D48A3E6A769A16A55D4 /* Pods_BaseProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FE91B4ECA0D30226A334064 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		95559FC31D5AFBDF001BE226 /* sixTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sixTestViewController.swift; sourceTree = "<group>"; };
+		95559FC51D5AFECC001BE226 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../main/LoginViewController.swift; sourceTree = "<group>"; };
+		95559FCB1D5B1BC6001BE226 /* ProgressHUDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDManager.swift; sourceTree = "<group>"; };
 		9569A3AA1D486CC3002AD65A /* leadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadViewController.swift; sourceTree = "<group>"; };
 		9569A3AB1D486CC3002AD65A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		9569A3AC1D486CC3002AD65A /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 		95EAE0131D4B2000000033B5 /* LocationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTool.swift; sourceTree = "<group>"; };
 		95EAE0161D4B430C000033B5 /* turn1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = turn1.swift; sourceTree = "<group>"; };
 		95EAE0181D4B434B000033B5 /* turn2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = turn2ViewController.swift; sourceTree = "<group>"; };
+		95FF263C1D5DA4330084E6EB /* menuCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCollectionCell.swift; sourceTree = "<group>"; };
 		C4140D48A3E6A769A16A55D4 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74AA2788853DB1CDC060F04 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95559FC71D5AFEFB001BE226 /* second */ = {
+			isa = PBXGroup;
+			children = (
+				9569A3B41D486CC3002AD65A /* secondPageViewController.swift */,
+			);
+			name = second;
+			sourceTree = "<group>";
+		};
+		95559FC81D5AFF0A001BE226 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				9569A3B51D486CC3002AD65A /* thirdPageViewController.swift */,
+			);
+			name = third;
+			sourceTree = "<group>";
+		};
+		95559FC91D5AFF19001BE226 /* four */ = {
+			isa = PBXGroup;
+			children = (
+				9569A3B31D486CC3002AD65A /* fourthPageViewController.swift */,
+			);
+			name = four;
+			sourceTree = "<group>";
+		};
+		95559FCA1D5AFF24001BE226 /* five */ = {
+			isa = PBXGroup;
+			children = (
+				9569A3B11D486CC3002AD65A /* fifthPageViewController.swift */,
+			);
+			name = five;
+			sourceTree = "<group>";
+		};
 		9569A3AE1D486CC3002AD65A /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +139,7 @@
 				9569A3C41D489F6C002AD65A /* string+something.swift */,
 				9569A3C61D48A756002AD65A /* FileTools.swift */,
 				95EAE0131D4B2000000033B5 /* LocationTool.swift */,
+				95559FCB1D5B1BC6001BE226 /* ProgressHUDManager.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -106,11 +147,13 @@
 		9569A3B61D486CC3002AD65A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				95FF263B1D5D8EE10084E6EB /* login */,
+				95559FCA1D5AFF24001BE226 /* five */,
+				95559FC91D5AFF19001BE226 /* four */,
+				95559FC81D5AFF0A001BE226 /* third */,
+				95559FC71D5AFEFB001BE226 /* second */,
 				95EAE0151D4B42E6000033B5 /* first */,
-				9569A3B11D486CC3002AD65A /* fifthPageViewController.swift */,
-				9569A3B31D486CC3002AD65A /* fourthPageViewController.swift */,
-				9569A3B41D486CC3002AD65A /* secondPageViewController.swift */,
-				9569A3B51D486CC3002AD65A /* thirdPageViewController.swift */,
+				95559FC31D5AFBDF001BE226 /* sixTestViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -136,12 +179,12 @@
 		959BD9551D47445400AAB71F /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				959BD9561D47445400AAB71F /* AppDelegate.swift */,
+				959BD9581D47445400AAB71F /* ViewController.swift */,
 				9569A3AE1D486CC3002AD65A /* main */,
 				9569A3AF1D486CC3002AD65A /* models */,
 				9569A3B01D486CC3002AD65A /* tools */,
 				9569A3B61D486CC3002AD65A /* views */,
-				959BD9581D47445400AAB71F /* ViewController.swift */,
-				959BD9561D47445400AAB71F /* AppDelegate.swift */,
 				959BD95D1D47445400AAB71F /* Assets.xcassets */,
 				959BD95F1D47445400AAB71F /* LaunchScreen.storyboard */,
 				959BD9621D47445400AAB71F /* Info.plist */,
@@ -156,8 +199,17 @@
 				9569A3B21D486CC3002AD65A /* firstPageViewController.swift */,
 				95EAE0161D4B430C000033B5 /* turn1.swift */,
 				95EAE0181D4B434B000033B5 /* turn2ViewController.swift */,
+				95FF263C1D5DA4330084E6EB /* menuCollectionCell.swift */,
 			);
 			name = first;
+			sourceTree = "<group>";
+		};
+		95FF263B1D5D8EE10084E6EB /* login */ = {
+			isa = PBXGroup;
+			children = (
+				95559FC51D5AFECC001BE226 /* LoginViewController.swift */,
+			);
+			name = login;
 			sourceTree = "<group>";
 		};
 		9D11ABA2F7B14A38E8668B11 /* Pods */ = {
@@ -307,8 +359,10 @@
 				9569A3BA1D486CC3002AD65A /* theme.swift in Sources */,
 				9569A3C51D489F6C002AD65A /* string+something.swift in Sources */,
 				95EAE0141D4B2000000033B5 /* LocationTool.swift in Sources */,
+				95559FCC1D5B1BC6001BE226 /* ProgressHUDManager.swift in Sources */,
 				9569A3C31D4870E9002AD65A /* getCookies.swift in Sources */,
 				9569A3BF1D486CC3002AD65A /* thirdPageViewController.swift in Sources */,
+				95559FC61D5AFECC001BE226 /* LoginViewController.swift in Sources */,
 				9569A3C71D48A756002AD65A /* FileTools.swift in Sources */,
 				959BD9571D47445400AAB71F /* AppDelegate.swift in Sources */,
 				9569A3B91D486CC3002AD65A /* MainTabBarController.swift in Sources */,
@@ -317,7 +371,9 @@
 				9569A3B81D486CC3002AD65A /* MainNavigationController.swift in Sources */,
 				9569A3BD1D486CC3002AD65A /* fourthPageViewController.swift in Sources */,
 				9569A3B71D486CC3002AD65A /* leadViewController.swift in Sources */,
+				95559FC41D5AFBDF001BE226 /* sixTestViewController.swift in Sources */,
 				95EAE0171D4B430C000033B5 /* turn1.swift in Sources */,
+				95FF263D1D5DA4330084E6EB /* menuCollectionCell.swift in Sources */,
 				9569A3BB1D486CC3002AD65A /* fifthPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

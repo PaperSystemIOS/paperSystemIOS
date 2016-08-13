@@ -11,10 +11,14 @@ import UIKit
 class turn1: UIViewController {
     var LocationBtn2:UIButton!
     override func viewDidLoad() {
+        
         self.title = "turn1"
         self.view.backgroundColor = theme.WZLBackgroundColor
         addPresent()
         
+    }
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
     }
     func addPresent(){
         LocationBtn2 = UIButton(frame: CGRectMake(80,50,AppWidth-160,50))

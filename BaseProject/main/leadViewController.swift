@@ -43,26 +43,39 @@ class leadViewController: UIViewController ,UIScrollViewDelegate{
         
     }
     
+//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+//        let index = Int(scrollView.contentOffset.x/self.view.frame.size.width)
+//        pageControll.currentPage = index
+//        if index==3 {
+//            self.button.frame = CGRectMake(3*self.view.frame.width, self.view.frame.height, self.view.frame.width, 50)
+//            self.button.setTitle("开启云卡之旅", forState: UIControlState.Normal)
+//            self.button.titleLabel?.font = UIFont.systemFontOfSize(20)
+//            self.button.setTitleColor(UIColor.whiteColor(),forState: UIControlState.Normal)
+//            self.button.backgroundColor = UIColor.orangeColor()
+//            self.button.alpha = 0
+//            self.button.addTarget(self, action: "btnClick:", forControlEvents: .TouchUpInside)
+//            UIView.animateWithDuration(0.5, delay: 0.3, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//                self.button.frame = CGRectMake(3*self.view.frame.width, self.view.frame.height-100, self.view.frame.width, 50)
+//                self.button.alpha = 1
+//                self.scrollView.addSubview(self.button)
+//                }, completion: nil)
+//        }
+//    }
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let index = Int(scrollView.contentOffset.x/self.view.frame.size.width)
         pageControll.currentPage = index
         if index==3 {
-            self.button.frame = CGRectMake(3*self.view.frame.width, self.view.frame.height, self.view.frame.width, 50)
-            self.button.setTitle("开启云卡之旅", forState: UIControlState.Normal)
+            self.button.frame = CGRectMake(3*self.view.frame.width, self.view.frame.height-100, self.view.frame.width, 50)
+            self.button.setTitle("开启易学缘", forState: UIControlState.Normal)
             self.button.titleLabel?.font = UIFont.systemFontOfSize(20)
             self.button.setTitleColor(UIColor.whiteColor(),forState: UIControlState.Normal)
             self.button.backgroundColor = UIColor.orangeColor()
-            self.button.alpha = 0
+            self.button.alpha = 1
             self.button.addTarget(self, action: "btnClick:", forControlEvents: .TouchUpInside)
-            UIView.animateWithDuration(0.5, delay: 0.3, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-                self.button.frame = CGRectMake(3*self.view.frame.width, self.view.frame.height-100, self.view.frame.width, 50)
-                self.button.alpha = 1
-                self.scrollView.addSubview(self.button)
-                }, completion: nil)
+            self.scrollView.addSubview(self.button)
         }
     }
     func btnClick(button:UIButton){
-        
         self.presentViewController(MainTabBarController(), animated: false, completion: nil)
     }
     

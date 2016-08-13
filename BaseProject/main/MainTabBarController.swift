@@ -27,15 +27,14 @@ class MainTabBarController: UITabBarController {
         // 首页
         tabBaraAddChildViewController(vc: firstPageViewController(), title: "首页", imageName: "导航栏_图标_首页_常态", selectedImageName: "导航栏_图标_首页_选中")
         // 资讯
-        tabBaraAddChildViewController(vc: secondPageViewController(), title: "资讯", imageName: "导航栏_图标_资讯_常态", selectedImageName: "导航栏_图标_资讯_选中")
+        tabBaraAddChildViewController(vc: secondPageViewController(), title: "服务", imageName: "导航栏_图标_资讯_常态", selectedImageName: "导航栏_图标_资讯_选中")
         // 服务
-        tabBaraAddChildViewController(vc: thirdPageViewController(), title: "服务", imageName: "导航栏_图标_服务_常态", selectedImageName: "导航栏_图标_服务_选中")
+        tabBaraAddChildViewController(vc: thirdPageViewController(), title: "我", imageName: "导航栏_图标_我的_常态", selectedImageName: "导航栏_图标_我的_选中")
         //校园卡
-        tabBaraAddChildViewController(vc: fourthPageViewController(), title: "校园卡", imageName: "导航栏_图标_校园卡_常态", selectedImageName: "导航栏_图标_校园卡_选中")
+        //tabBaraAddChildViewController(vc: fourthPageViewController(), title: "我", imageName: "导航栏_图标_校园卡_常态", selectedImageName: "导航栏_图标_校园卡_选中")
         // 我的
-        tabBaraAddChildViewController(vc: fifthPageViewController(), title: "我的", imageName: "导航栏_图标_我的_常态", selectedImageName: "导航栏_图标_我的_选中")
-        
-        
+        //tabBaraAddChildViewController(vc: fifthPageViewController(), title: "待定。。。", imageName: "导航栏_图标_我的_常态", selectedImageName: "导航栏_图标_我的_选中")
+
     }
     
     private func tabBaraAddChildViewController(vc vc: UIViewController, title: String, imageName: String, selectedImageName: String) {

@@ -63,11 +63,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let versionStr = "CFBundleShortVersionString"
         let cureentVersion = NSBundle.mainBundle().infoDictionary![versionStr] as! String
         let oldVersion = (NSUserDefaults.standardUserDefaults().objectForKey(versionStr) as? String) ?? ""
-        
+    
         if cureentVersion.compare(oldVersion) == NSComparisonResult.OrderedDescending {
             NSUserDefaults.standardUserDefaults().setObject(cureentVersion, forKey: versionStr)
             NSUserDefaults.standardUserDefaults().synchronize()
             return leadViewController()
+        }
+//        else if !UserAccountTool.userIsLogin(){
+//            return LoginViewController()
+//        }
+        else{
+            return MainTabBarController()
         }
         //        if !UserAccountTool.userIsLogin() {
         //            return LoginViewController()
@@ -75,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //            return MainTabBarController()
         //        }
         
-        return MainTabBarController()
+        
     }
     //MARK: - 分享设置
     func setAppAppearance() {

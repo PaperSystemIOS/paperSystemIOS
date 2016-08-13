@@ -1,26 +1,20 @@
 //
-//  fifthPageViewController.swift
+//  sixTestViewController.swift
 //  BaseProject
 //
-//  Created by wzl wzl on 16/7/27.
+//  Created by wzl wzl on 16/8/10.
 //  Copyright © 2016年 wzl wzl. All rights reserved.
 //
 
 import UIKit
-import SVProgressHUD
 
-class fifthPageViewController: UIViewController {
+class sixTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "第kkkk页"
+        self.title = "第六页"
         self.view.backgroundColor = theme.WZLBackgroundColor
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        //SVProgressHUD.showWithStatus("正在清理缓存")
-        
     }
 
     override func didReceiveMemoryWarning() {

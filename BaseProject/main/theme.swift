@@ -12,6 +12,7 @@ import UIKit
 public let MainBounds: CGRect = UIScreen.mainScreen().bounds
 public let AppWidth: CGFloat = UIScreen.mainScreen().bounds.size.width
 public let AppHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
+
 //导航栏高度
 public let NavigationH: CGFloat = 64
 
@@ -52,7 +53,7 @@ struct theme {
     static let DeepBlue = UIColor.init(red: 30/225, green: 35/225, blue: 245/225, alpha: 1)
     //通用浅蓝色
     static let BaseBlue = UIColor.init(red: 30/225, green: 145/225, blue: 225/225, alpha: 1)
-    //ViewController的背景颜色
+    //ViewController的背景颜色,米白色
     static let WZLBackgroundColor: UIColor = UIColor.init(red:245/255, green: 245/255, blue: 245/255, alpha: 1)
     //APP导航条barButtonItem文字大小
     static let WZLNavItemFont: UIFont = UIFont.systemFontOfSize(16)

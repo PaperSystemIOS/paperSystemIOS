@@ -81,9 +81,14 @@ class LocationTool: UIViewController ,CLLocationManagerDelegate ,UISearchBarDele
         let lati = "\(newLocation.coordinate.latitude)"
         let longi = "\(newLocation.coordinate.longitude)"
         locationManager.stopUpdatingLocation()
-        alert = UIAlertView(title: "提示", message: "经度："+lati+"，纬度："+longi, delegate: self, cancelButtonTitle: "确定")
-        alert.show()
-        //setBackground()
+//        alert = UIAlertView(title: "提示", message: "经度："+lati+"，纬度："+longi, delegate: self, cancelButtonTitle: "确定")
+//        alert.show()
+//        ProgressHUDManager.showImage(UIImage(named: "登录_定位")!, status: "经度："+lati+"，纬度："+longi)
+        SVProgressHUD.showImage(UIImage(named: "登录_定位")!, status: "经度："+lati+"，纬度："+longi)
+        //SVProgressHUD.dismissWithDelay(2)
+        SVProgressHUD.setMinimumDismissTimeInterval(2)
+        //SVProgressHUD.showErrorWithStatus("cuole")
+        
         
     }
 
@@ -91,7 +96,7 @@ class LocationTool: UIViewController ,CLLocationManagerDelegate ,UISearchBarDele
         print(error)
     }
     func getSchool(latitude: String, longitude: String) -> Bool{
-        let tmpSelf = self
+        //let tmpSelf = self
         //let url = NSURL(string: YKTUrl+"customer/nearbySchool?rqsJson=%7B%22x%22:"+latitude+",%22y%22:"+longitude+"%7D"+YKTSign)
         let url = NSURL(string: YKTUrl+"customer/nearbySchool?rqsJson=%7B%22x%22:0,%22y%22:0%7D"+YKTSign)
         let data = NSData(contentsOfURL: url!)

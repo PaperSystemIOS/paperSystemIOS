@@ -12,7 +12,7 @@ class fourthPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "第四页"
+        self.title = "我"
         self.view.backgroundColor = theme.WZLBackgroundColor
         // Do any additional setup after loading the view.
     }
