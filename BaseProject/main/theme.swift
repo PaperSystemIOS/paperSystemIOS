@@ -51,8 +51,10 @@ public let splashData_UserDefaults = "splashData_UserDefaults"
 struct theme {
     //通用深蓝色
     static let DeepBlue = UIColor.init(red: 30/225, green: 35/225, blue: 245/225, alpha: 1)
+    //通用浅蓝色，飞鸟论文的主题蓝
+    static let BaseBlue = UIColor.init(red: 67/225, green: 119/225, blue: 193/225, alpha: 1)
     //通用浅蓝色
-    static let BaseBlue = UIColor.init(red: 30/225, green: 145/225, blue: 225/225, alpha: 1)
+    static let BaseBlue1 = UIColor.init(red: 30/225, green: 145/225, blue: 225/225, alpha: 1)
     //ViewController的背景颜色,米白色
     static let WZLBackgroundColor: UIColor = UIColor.init(red:245/255, green: 245/255, blue: 245/255, alpha: 1)
     //APP导航条barButtonItem文字大小

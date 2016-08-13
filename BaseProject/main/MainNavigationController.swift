@@ -54,6 +54,7 @@ class MainNavigationController: UINavigationController {
             //            }
             //            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
             viewController.hidesBottomBarWhenPushed = true
+            
         }
         
         super.pushViewController(viewController, animated: animated)
